@@ -11,21 +11,9 @@ body {
 	border: 0;
 }
 
-#logo-img {
-	/*background-image: url('https://cdn.iconscout.com/public/images/icon/free/png-128/ebay-logo-online-shopping-3853794a80ab4c31-128x128.png')*/
-	background-position: center bottom;
-	width: 130px;
-	height: 130px;
-	margin: 15px 0px 10px 0px;
-}
-img.resize{
-	width: 200px;
-	height: 150px;
-}
-
 .navbar-brand h1 {
 	font-family: 'Lora', serif;
-	color: #557c3e;
+	color: #98AFC7;
 	font-size:2em;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -45,3 +33,87 @@ img.resize{
 	font-size: .7em;
 	margin-top: 15px;
 }
+ #phone-number{
+ 	font-size: 50%;
+ }
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+	border: 1px solid #98AFC7;
+}
+
+#nav-list a{
+	color: #98AFC7;
+	text-align: center;
+}
+.navbar-header button.navbar-toggle {
+	clear: both;
+	margin-top: -30px;
+}
+
+.container .jumbotron {
+	box-shadow: 0 0 0px #98AFC7;
+	border: 2px oslid #98AFC7;
+	background-position: center;
+}
+#food-tile, #decoration-tile, #map-tile {
+	height: 250px;
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+	border: 2px solid #98AFC7;
+	overflow: hidden;
+}
+#food-tile:hover, #decoration-tile:hover, #map-tile:hover {
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#food-tile {
+	background: url('images/food-salad-healthy-lunch.jpg') no-repeat;
+	background-position: center;
+}
+#decoration-tile{
+	background: url('images/home.jpeg') no-repeat;
+	background-position: center;
+
+}
+
+#food-tile span, #decoration-tile span, #map-tile span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%
+	font-size: 1.6em;
+	text-transform: uppercase;
+	background-color: #000;
+	text-align:center;
+	color: #fff;
+	opacity: .8;
+}
+
+@media (max-width: 767px){
+	.navbar-brand {
+		padding-top: 10px;
+		height: 80px;
+	}
+	.navbar-brand h1{
+		padding-top: 10px;
+		font-size: 5vw;/*1vw =1% pf viewport width */
+	}
+	.container .jumbotron {
+		margin-top: 30px;
+		padding: 0;
+	}
+	#food-tile, #decoration-tile, #map-tile{
+		width: 360px;
+		margin: 0 auto 15px;
+	}
+}
+@media (max-width: 479px){
+	.navbar-brand h1{
+		padding-top: 5px;
+		font-size: 6vw;
+	}
+	#food-tile, #decoration-tile, #map-tile{
+		width: 280px;
+		margin: 0 auto 15px;
+	}
+	}

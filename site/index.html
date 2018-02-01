@@ -6,6 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>E Auction</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lora:400i" rel="stylesheet">
@@ -13,30 +15,69 @@
 </head>
 <body>
 	<header>
-		<nav id="header-nav" class="navbar navbar-default">
-			<div class="container">
-				<div class="navbar-header">
-					<a href="index.html" class="pull-left visible-md visible-lg">
-						<div id ="logo-img" alt="Logo image"></div>
-					</a>
-				<div class="navbar-brand">
-					<a href="index.html"><h1>E Auction</h1></a>
-				<p>
-					
-					<span>online shopping</span>
-				</p>
-				</div>
+		<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+    	<a class="navbar-brand" href="index.html"><h1>E Auction</h1></a>
 
-				<button type="button" class="navbar-toggle collapsed" data
-				-toggle='collapse' data-target='#collapsable-nav' aria-expanded='false'>
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				</button>
-				</div>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    
+    <div id="collapsable-nav" class="collapse navbar-collapse">
+				<ul id="nav-list" class="nav narbar-nav navbar-right">
+					<li>
+						<a href="#">
+							<span class="glyphicon glyphicon-shopping-cart">ShoppingCart</span><br class="hidden-xs">
+						</a>					
+					</li>
+					<li>
+						<a href="#">
+							<span class="glyphicon glyphicon-info-sign">SignIn</span><br class="hidden-xs">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="glyphicon glyphicon-envelope">Email</span><br class="hidden-xs">
+						</a>
+					</li>
+					
+				</ul></div>
 			</div>
+
+			</div><!-- /.container-fluid -->
 		</nav>
 	</header>
+
+
+	<div id="main-content" class="container">
+		<div class="jumbotron">
+			<img src="images/clock.jpeg" alt="Picture of the web" class="img-responsive visible-lg visible-md visible-sm visible-xs">
+		</div>
+		<div id="home-titles" class="row">
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<a href="food-categories.html"><div id="food-tile"><span>Food</span></div></a>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<a href="decoration-categories.html"><div id="decoration-tile"><span>Clothes</span></div></a>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">	
+				<a href="https://www.google.com/maps/place/US+Post+Office/@40.7851504,-77.8293572,17z/data=!3m1!4b1!4m5!3m4!1s0x89ceaf4e3f71c759:0x65430dd2359c7512!8m2!3d40.7851504!4d-77.8271632" target="_blank">
+					<div id="map-tile">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.948316286622!2d-77.82935724943889!3d40.78515037922251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ceaf4e3f71c759%3A0x65430dd2359c7512!2sUS+Post+Office!5e0!3m2!1sen!2sus!4v1517452993668" width="350" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+						<span>pick up near you</span>
+					</div>
+				</a>			
+			</div>
+			
+		</div>
 </body>
 </html>
